@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-public class Dipendente implements CheckIn {
+public class Dipendente {
     private int matricola;
     private float stipendio;
     @Setter
@@ -34,8 +34,5 @@ public class Dipendente implements CheckIn {
         this.dipartimento = dipartimento;
     }
     public Dipendente(){};
-    @Override
-    public void checkIn() {
-        System.out.println("Il dipendente,"+matricola+", ha effettuato il check-in");
-    }
+
 }
